@@ -2,9 +2,11 @@
 
 Twitter 2.0 is a basic twitter app to read your tweets.
 
-Time spent: **2** hours spent in total
+Time spent: **4** hours spent in total
 
-## User Stories
+## Twitter - Part I
+
+### User Stories
 
 The following **required** functionality is completed:
 
@@ -18,6 +20,20 @@ The following **bonus** features are implemented:
 
 - [x] User can pull to refresh. (1pt)
 - [x] User can load past tweets infinitely. (2pts)
+
+# Twitter - Part II
+
+### User Stories
+
+The following **required** functionality is completed:
+
+- [x] User can compose a tweet. (4pts)
+- [x] User can favorite a tweet. (4pts)
+- [x] User can retweet a tweet. (2pts)
+
+The following **bonus** features are implemented:
+
+- [x] User can unretweet a tweet.
 
 ## Video Walkthrough
 

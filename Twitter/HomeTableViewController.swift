@@ -68,6 +68,11 @@ class HomeTableViewController: UITableViewController {
         tableView.refreshControl = myRefreshControl
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.loadTweets()
+    }
+    
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row + 1 == tweetArr.count {
             loadMoreTweets()
@@ -90,6 +95,10 @@ class HomeTableViewController: UITableViewController {
         cell.usernameLabel.text = user["name"] as? String
         cell.tweetContent.text = tweetArr[indexPath.row]["text"] as? String
         
+        cell.setFavorite(tweetArr[indexPath.row]["favorited"] as! Bool)
+        cell.setRetweet(tweetArr[indexPath.row]["retweeted"] as! Bool)
+        cell.tweetId = tweetArr[indexPath.row]["id"] as! Int
+
         return cell
     }
     
